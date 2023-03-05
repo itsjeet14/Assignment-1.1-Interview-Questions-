@@ -1,0 +1,127 @@
+                                            Python Interview questions - Functions
+                                                      Python – Functions
+
+1. What are the two types of functions in Python?
+There are two types of functions in Python: "built-in" functions and "user-defined" functions. 
+•	Built-in functions are functions that are already defined in the Python language, such as the print() function. 
+•	User-defined functions are functions that are created by the user, and they can be created to do anything that the user wants them to do.
+
+2. Can you explain what a call graph is? How do you create one?
+A call graph is a visual representation of the relationships between the various functions in a Python program. It can be used to help 
+debug code, optimize code, and understand code flow. To create a call graph, you can use the pycallgraph library.
+
+3. When should you use anonymous functions and when should you use regular ones?
+There is no definitive answer to this question, as it depends on the specific situation and what you are trying to accomplish. 
+However, a general rule of thumb is that anonymous functions are best used for simple tasks that can be easily expressed in a single line of code. 
+Regular functions, on the other hand, are better suited for more complex tasks that require multiple lines of code.
+ 
+4. Do Python functions have return values? If yes, then how many can they have?
+Yes, Python functions can have return values. They can have a single return value, or they can have multiple return values.
+
+5. Why does Python support both "positional" and "keyword" arguments to its functions?
+Python supports both positional and keyword arguments in order to give developers more flexibility when designing their functions. 
+• Positional arguments are those that are passed in by position, without explicitly specifying the parameter name. 
+• Keyword arguments are those that are passed in by explicitly specifying the parameter name. 
+Python allows for both types of arguments so that developers can choose the approach that makes the most sense for their particular function.
+
+6. Is it possible for a function’s code to read from or write to variables defined outside that function? If yes, then how?
+Yes, it is possible for a function’s code to read from or write to variables defined outside that function. This is known as “accessing global variables".
+To do this, the function must first use the “global” keyword to declare which variables it is accessing. For example:
+
+global var1
+var1 = 5
+def func():
+    pass
+print(var1) 
+func() # Prints 5
+
+7. Can you explain what a “closure” is in Python? How do you implement closures?
+A closure is a function that remembers the values from the enclosing scope even when the program flow is no longer in that scope. 
+Closures are implemented by creating a function that takes in one or more values from the enclosing scope and then returning a new function 
+that uses those values.
+
+8. Can you explain what decorators are in Python?
+Decorators are a way to dynamically alter the behaviour of a function. They are usually used as a way to add functionality to an existing 
+function without having to modify the code of the function itself. Decorators are typically written in the form of a wrapper function.
+
+9. Is there any way to define static methods in Python? If yes, then how?
+Static methods are defined in Python by using the @staticmethod decorator. This decorator can be applied to any method, and will cause the 
+method to be treated as a static method, even if it is not defined as such.
+
+10. Is it possible to pass a variable number of arguments to a function in Python? If yes, then how?
+Yes, it is possible to pass a variable number of arguments to a function in Python. This can be done using the *args and **kwargs parameters. 
+•	*args allows for a variable number of non-keyworded arguments to be passed to a function, while -
+•	**kwargs allows for a variable number of keyworded arguments to be passed.
+
+11. How would you convert JSON to Python objects?
+The json library in Python can help you convert JSON data into Python objects. The process is known as decoding. You can use the json.loads() function 
+to decode JSON data. This function takes a JSON string and returns a Python object.
+ 
+12. Can you explain what recursion is and why it’s useful?
+Recursion is a function that calls itself. It’s useful because it allows you to break down a problem into smaller, more manageable pieces.
+
+13. What is tail-recursion?
+Tail-recursion is a type of recursion where the last statement in the function is a recursive call. This is important because it allows the 
+interpreter to optimize the function by not having to keep track of the current state of the function, since it can simply jump to the 
+beginning of the function and start again.
+
+14. Can you explain what memoization is and why it’s useful?
+Memoization is a technique for optimizing code by caching and reusing previously-computed results. It can be used to speed up calculations 
+by avoiding redundant work, and it can also be used to make code more memory-efficient by storing the results of expensive function calls and 
+avoiding the need to recalculate them each time the function is called.
+
+15. What is currying?
+Currying is the process of taking a function with multiple arguments and turning it into a function that takes a single argument. 
+The single argument is then used to generate a new function that takes the next argument, and so on, until all arguments have been used. 
+Currying is often used in functional programming to make code more concise.
+
+16. Can you give me some examples where I might want to use an assertion function?
+Assertions are often used in debugging to check for conditions that should never occur in normal execution. For example, if you are working 
+with a list, you might want to assert that the list is never empty, or that every element in the list is greater than 0.
+ 
+17. Can you explain the difference between “named” parameters and “keyword” parameters in Python?
+In Python, “named” parameters are those that are assigned a name in the function definition, while “keyword” parameters are those that are 
+assigned a value when the function is called. For example, in the following function definition, the parameter x is a “named” parameter, 
+while the parameter y is a “keyword” parameter:
+
+def func(x, y=5):
+    pass
+    
+In this example, the parameter y will always have the value 5 when the function is called, unless a different value is explicitly provided.
+
+18. What’s the difference between “positional” parameters and “default” parameters in Python?
+•	Positional parameters are parameters that are required to be provided in order for the function to run. 
+•	Default parameters are parameters that are not required to be provided, but have a default value that will be used if no other value is provided.
+
+19. How do you access the value returned by a function invoked in another function?
+You can access the value returned by a function invoked in another function by using the return statement. For example, if you have a function 
+that calculates the sum of two numbers, you can access the value returned by the function by using the return statement.
+
+20. Can you give me some examples of monkeypatching in Python?
+Monkeypatching is the process of dynamically altering the behavior of a function or class at runtime. This can be useful for patching bugs, 
+adding new features, or simply overriding the behavior of a function or class for testing purposes. Some examples of monkeypatching in Python include:
+– Altering the behavior of a built-in function:
+“`python
+# python
+>>> import builtins
+>>> def my_print(*args, **kwargs):
+…   print('Hello, world!')
+…
+>>> builtins.print = my_print
+>>> print('This will print “Hello, world!”')
+>>> Output: Hello, world!
+
+– Altering the behavior of a method in a class:
+# python
+>>> class MyClass:
+…   def my_method(self):
+…  'print('Hello, world!')
+…
+>>> def new_method(self):
+…   print('Goodbye, world!')
+…
+>>> MyClass.my_method = new_method
+>>> MyClass().my_method()
+>>> Output: Goodbye, world!
+
+
