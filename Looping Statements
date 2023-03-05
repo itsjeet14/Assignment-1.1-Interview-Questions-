@@ -1,0 +1,253 @@
+                                          Python Interview questions - Looping Statements
+                                                    Python – Looping Statements
+                                                         Long Answer Type 
+                                                    
+1. What is the difference between a "for" loop and a "while" loop?
+A "for" loop is typically used when you know exactly how many times the loop needs to be repeated. A "while" loop is typically used when you 
+don't know how many times the loop needs to be repeated. A "while" loop repeats as long as its condition is true. For example, if a "while" loop 
+says "while x == 5", then the line will execute as long as x equals five.
+
+2. What is the Python syntax for a "for" loop?
+The "for" loop is a programming construct that allows you to iterate over an arbitrary range of values, mapping them to the required actions.
+It can be thought of as an extension of the mathematical notion of a "for" loop, which is defined as "a control structure that enables one to 
+iterate (repeat) a process (such as counting or summing) while varying the process's start value (or its end point), step size, and/or direction."
+
+- The syntax for Python for loops is:
+for x in range(y): 
+  do something
+
+3. What are the advantages of using a "for" loop in Python?
+A "for" loop is a type of loop that executes a set of instructions repeatedly. It uses the following syntax: for x in range(y): do something
+This type of loop has the following properties:
+•	For loops are good because they can make your code more readable and easier to follow.
+•	They also make sure that certain instructions are executed at least one time.
+
+4. What are the disadvantages of using a "for" loop in Python?
+The for-loop is one of the most basic constructs in programming. However, this construct has its own disadvantages.
+•	If you don't know the upper-bound of your loop, you have to keep track of it by hand or break out of your loop early.
+•	You can't use a break statement to escape from a nested loop.
+
+5. How can I use a break statement in my Python "for" loops?
+A break statement can be used to terminate a loop. It is often used when the programmer needs to stop iterating through the data and instead 
+go back to checking for other conditions.
+
+6. what is the difference between the "continue" and "break" statements in Python?
+The "break" statement terminates the loop that contains it. The program immediately moves to the code section that is in the outer scope of the loop.
+The "continue" statement skips the rest of the code of the current iteration and move to the next iteration.
+
+                                                      
+                                                      
+                                                      MCQ on Looping Statements
+1. What is the purpose of a "pass" command in python?
+a) To move the focus to another path
+b) It does not do anything
+c) Makes the variable move to another object
+d) Skip the printing of the output
+                                                                                                         Answer - a) It does not do anything
+2. What is the keyword preceded by the "break" command in a loop?
+a) if
+b) when
+c) while
+d) after
+                                                                                                                              Answer - a) if
+3. Which of the following is not a part of a loop in Python?
+a) For
+b) elif
+c) Loop
+d) While
+                                                                                                                            Answer - c) Loop 
+4. Which of the following type of loop(s) is/are not supported by Python?
+a) for
+b) while
+c) Both for and while
+d) do while
+                                                                                                                                Ans: do while
+5. What would be the result of executing the following code?
+n = sum(range(2,4))
+while n:
+    print(n, end = ' ')
+    n = n - 1
+    break
+else:
+    print('End', end = ' ')
+
+a) 5 4 3 2 1 End
+b) 5 4 3 2 1
+c) 5
+d) TypeError
+                                                                                                                                       Ans: 5
+6. Which statement is used inside a loop to skip the rest of the code for the current iteration, so execution can continue with the next iteration?
+a) abort
+b) break
+c) next
+d) continue
+                                                                                                                                Ans: continue
+7. Which loop in Python is a counter-controlled loop?
+a) for
+b) while
+c) do while
+d) repeat
+                                                                                                                                    Ans: for
+8. Which Python statement is used to bring control out of the current loop?
+a) abort
+b) break
+c) exit
+d) quit
+                                                                                                                                  Ans: break
+9. What would be the result of executing the following code?
+sum = 0
+for i in range(5, 0, -2):
+    sum += i > sum
+print(sum)
+
+a) 0
+b) 1
+c) 2
+d) 3
+                                                                                                                                      Ans: 2
+10. Which of the following code will result in an infinite loop?
+a) while(-1):
+     print ('OK')
+
+b) while(None):
+     print ('OK')
+
+c) while(0):
+     print ('OK')
+
+d) while(range(-1)):
+     print ('OK')
+                                                                                                                        Ans: while(-1):
+                                                                                                                                print ('OK')
+11. What keyword is used "for" looping?
+A) while
+B) for
+C) loop
+                                                                                                                                Answer: for
+12. What function can generate a list of numbers?
+A) for
+B) list
+C) range
+                                                                                                                              Answer: range
+13. Name the 2 keywords used for looping?
+A) while loop
+B) for loop
+C) for while
+                                                                                                                          Answer: for while
+14. What module is used for generating random values?
+A) math
+B) random
+C) randrange
+                                                                                                                             Answer: random
+15. What keyword is used to skip back to the beginning of a loop?
+A) break
+B) while
+C) continue
+                                                                                                                            Answer: continue
+16. What keyword is used to end looping completely?
+A) end
+B) break
+C) continue
+                                                                                                                               Answer: break
+17. Use range to generate a list from 1 through 5?
+A) range(1, 5)
+B) range(5)
+C) range(1,6)
+                                                                                                                          Answer: range(1,6)
+18. Select the code needed to generate a random number between 1 through 50 and assign it to rand_num?
+A) random.randrange(1, 51)
+B) random.randrange(1, 50)
+C) random(1, 50)
+                                                                                                             Answer: random.randrange(1, 51)
+19. What numbers does the following Range generate: range(5,10)?
+A) 5,6,7,8,9,10
+B) 6,7,8,9,10
+C) 5,6,7,8,9
+                                                                                                                          Answer: 5,6,7,8,9
+20. What numbers does the following range generate range(3)?
+A) 3
+B) 1,2,3
+C) 0,1,2,3
+D) 0,1,2
+                                                                                                                              Answer: 0,1,2
+21. What is printed out after the following code: 
+nums = range(1,5) 
+print(nums)
+
+A) 1,2,3,4
+B) range(1,5)
+                                                                                                                         Answer: range(1,5)
+22. What numbers does the following range generate range(8,0,-2):
+A) 0,2,4,6
+B) 8,6,4,2
+C) 8,6,4,2,0
+                                                                                                                            Answer: 8,6,4,2
+23. What does the following loop do?
+
+i = 1
+while i < 5:
+    i + i
+    print(i)
+
+A) It prints 1,2,3,4,5 and then exits
+B) It prints 1,2,4 then exits
+C) It prints 1 forever
+                                                                                                                Answer: It prints 1 forever
+24. What does the following loop do?
+
+# print 1 to 5
+i = 0
+while i <= 5:
+    i =+ 1
+    print(i)
+
+A) It prints 1 through 5 because it increments i each time
+B) It prints 0 through 5 because i starts at zero
+C) It prints 1 forever because there is a typo with the increment which should be += instead of =+.
+D) It prints zero through four because i starts at zero and goes up until 5.
+                                                                                        Answer: It prints 1 forever because there is a typo 
+                                                                                        with the increment which should be += instead of =+.
+25. What can we do to get out of the infinite loop below?
+
+#this code runs forever...
+x = 0
+while x != 11:
+    x += 2
+    print(x)
+
+A) Change the condition to x ! = 10
+B) Change the condition to x < 11
+C) Add logic that says if x == 10: break
+D) Press control + C while your program is running to kill it
+E) All of the above
+                                                                                                                  Answer: All of the above
+26. "For" loops are used to loop over:
+A) Loopy objects
+B) Numbers
+C) Iterable objects
+D) Lines of code
+                                                                                                                  Answer: Iterable objects
+27. What is the tradeoff when using "while" loops for looping?
+A) While loops are more flexible since you explicitly set the start and end conditions, but they require more setup than for loops
+B) While loops are faster than for loops but require more setup
+C) While loops can loop infinitely and give you more control, but they cannot be used to iterate over iterable objects
+                                                                                Answer: While loops are more flexible since you explicitly 
+                                                                                        set the start and end conditions, but they require 
+                                                                                        more setup than for loops
+28. What does the "break" keyword do?
+A) Exits the loop at the beginning of the next iteration
+B) Breaks your code
+C) Exits the loop at the end of this iteration
+D) Exits the loop immediately
+                                                                                                         Answer: Exits the loop immediately
+29. What does the following code print?
+
+for x in range(5):
+    print(x)
+
+A) 1 2 3 4 5
+B) 1 2 3 4
+C) 0 1 2 3 4
+                                                                                                                         Answer: 0 1 2 3 4
+
+ 
