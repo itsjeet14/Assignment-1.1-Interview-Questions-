@@ -1,0 +1,119 @@
+                                                  Python Interview questions - data types
+                                                       Python – Conditional Statements
+
+1. In a Python program, a control structure:
+A) Defines program-specific data structures
+B) Dictates what happens before the program starts and after it terminates
+C) Manages the input and output of control characters
+D) Directs the order of execution of the statements in the program
+                                                                                                                                   Ans: (D)
+2. Which one of the following if statements will not execute successfully:
+A) if (1, 2): print('foo')
+ 
+B) if (1, 2):
+
+      print('foo')
+ 
+C) if (1, 2):
+   print('foo')
+ 
+D) if (1, 2):
+    print('foo')
+ 
+E) if (1, 2):
+                print('foo')
+                                                                                                                                  Ans: (C)
+3. What signifies the end of a statement block or suite in Python?
+A) A line that is indented less than the previous line
+B) }
+C) A comment
+D) end
+                                                                                                                                  Ans: (A)
+4. What is the output of the following code snippet:
+if 'bar' in {'foo': 1, 'bar': 2, 'baz': 3}:
+    print(1)
+    print(2)
+    if 'a' in 'qux':
+        print(3)
+print(4)
+ 
+A)  1
+    2
+    3
+    4
+ 
+B)  1
+    2
+    4
+ 
+C)  4
+D) It doesn’t generate any output.
+                                                                                                                                  Ans: (B)
+5. Suppose you have the following variables defined:
+a = 100
+b = 50
+Write a Python if/else statement to assign the smaller of a and b to the variable m.
+                                                                                                                                Solution: 
+                                                                                                                                if a < b:
+                                                                                                                                    m = a
+                                                                                                                                else:
+                                                                                                                                    m = b
+6. What is the value of this expression:
+'a' + 'x' if '123'.isdigit() else 'y' + 'b'
+ 
+A) 'ax'
+B) 'axyb'
+C) 'axb'
+D) 'ab'
+                                                                                                                                  Ans: (A)
+7. Suppose you have two variables x and y defined. Write a stub if statement to evaluate whether x is less than y. The statement should not do 
+anything, even if the condition is true.
+                                                                                                                                  Solution: 
+                                                                                                                                  if x < y:
+                                                                                                                                      pass
+8. List the 3 keywords used for conditional execution?
+A) = = != <>
+B) if else elif
+C) and or not
+                                                                                                                      Answer: if else elif
+9. List the 6 conditional operators?
+A) and or not xor neg pos
+B) if else elif and or not
+C) > < >= <= == !=
+                                                                                                                   Answer: > < >= <= == !=
+10. What is the name of the operator used to assign 1 of 2 values depending on a condition?
+A) logical operator
+B) conditional operator
+C) ternary operator
+                                                                                                                  Answer: ternary operator
+11. List the 3 logical operators?
+A) and or not
+B) = = != <>
+C) and xor not
+                                                                                                                      Answer: and xor not
+12. Write code that adds num_1 to num_2 and saves the result to sum?
+A) sum = num_1 + num_2
+B) sum = add(num_1, num_2)
+C) sum <= num_1 + num_2
+                                                                                                              Answer: sum = num_1 + num_2
+13. What operator returns the remainder of a division?
+A) %
+B) /
+C) div
+                                                                                                                                Answer: %
+14. Use modulus in a condition to test for an even value?
+A) if (i % 2) == 0
+B) if (i / 2) == 0
+C) if (i div 2) == 0
+                                                                                                                  Answer: if (i % 2) == 0
+15. How do you cast num_1 from a string to an int?
+A) num_1 = str(num_1)
+B) num_1 = integer(num_1)
+C) num_1 = int(num_1)
+                                                                                                                Answer: num_1 = int(num_1)
+16. Show the part between curly brackets you would use to format a float to show only 2 decimal values?
+A) {.2f}
+B) {:.2f}
+C) {:.2d}
+                                                                                                                            Answer: {:.2f}
+
