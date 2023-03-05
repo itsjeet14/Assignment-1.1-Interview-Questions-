@@ -1,0 +1,159 @@
+                                          Python Interview questions - data types
+                                          
+                                                Descriptive Type Question
+
+>> What are Data Types?
+A data type is a set of values and a set of operations defined on data. An implementation of a data type is an expression of data and operations 
+in terms of a specific programming language such as Java, C ++, or Python.
+
+>> Name four of the main data types in Python
+Numbers, strings, lists, dictionaries, tuples, files, and sets are generally considered the main types of data. Types, None, and Booleans are 
+sometimes also classified this way. The integer, floating-point, complex, fraction and decimal are numerical data types and simple strings and 
+Unicode strings in Python 2 and text strings and byte strings in Python 3 are the types of string data types.
+
+>> Why are these data types known as Python’s core data types?
+They are known as the core data types because they are part of the Python language itself and are always available to create other objects, you 
+usually need to call functions in imported modules. Most of the data types have a specific syntax for generating objects: “spam”, for example, 
+is an expression that creates a string and determines the set of operations that can be applied to it. For this reason, main types are built into 
+Python syntax. Instead, you must call the built-in open function to create a file object.
+
+>> What does immutable mean and what three types of Python core data types are considered immutable?
+An immutable data type is a type of object which cannot be modified after its creation. Numbers, strings, and tuples in Python fall into this 
+category. Although you cannot modify an immutable object in place, you can always create a new one by running an expression.
+
+>> What does sequence mean and which three types of data fall into this category?
+A sequence data type is a collection of objects ordered by a specific position. In Python, Strings, lists, and tuples are the data types based 
+on sequences. The Sequences share common sequence operations, such as indexing, concatenation, and slicing, but also have type-specific method calls.
+
+>> What does mapping mean and what kind of data type is based on mapping?
+The term mapping refers to an object that maps keys to associated values. The Python dictionary is the only type of mapping in the base typeset. 
+Mappings do not maintain any left-to-right position order; they support access to stored data by key, as well as type-specific method calls.
+
+>> What is polymorphism and why should you care?
+Polymorphism means that the meaning of an operation (like a+) depends on the objects being operated. This turns out to be a key idea behind good 
+use of Python, not coercing code to specific types makes that code automatically applied to many types.
+
+                                              
+                                              
+                                              MCQ Type Question
+1. What is the type of the following: 1?
+A) float
+B) int
+C) str
+                                                                                                                                    Answer: int
+                                                                                 Explanation: As there is no decimal, the number is of type int.
+2. What is the type of the following "7.1"?
+A) float
+B) int
+C) str
+                                                                                                                                    Answer: str
+                                                                                                              Explanation: The type is a string.
+3. What is the result of the following code segment: int (12.3)?
+A) 12.3
+B) 12
+C) 13
+                                                                                                                                     Answer: 12
+                                                                      Explanation: In Python, if you cast a float to an integer, the conversion 
+                                                                                                                          truncates toward zero.
+4. What is the result of the following code segment: int (True)
+A) 1
+B) 0
+C) error
+                                                                                                                                      Answer: 1
+                                                                            Explanation: When you cast a Boolean True to an integer you get a 1.
+5. What do you call a value that doesn’t have decimal values?
+A) A number
+B) An integer
+C) A string
+                                                                                                                             Answer: An integer
+6. What do you call a value that does have decimal values?
+A) A float
+B) A number
+C) An integer
+                                                                                                                                Answer: A float
+7. What data type can only have either a value of True or False?
+A) A string
+B) A Boolean
+C) An integer
+                                                                                                                              Answer: A Boolean
+8. What code would turn the string “1” into an integer?
+A) str(1)
+B) int("1")
+C) float ("1")
+                                                                                                                               Answer: int("1")
+9. What character begins a single-line comment?
+A)'''
+B) //
+C) #
+                                                                                                                                      Answer: #
+10. What do we call it when we convert from one data type to another?
+A) casting
+B) converting
+C) changing
+                                                                                                                                Answer: casting
+11. What is the datatype of np.nan?
+A) int
+B) float
+C) str
+D) None
+                                                                                                                                  Answer: float
+12. Which of the following numbers is NOT a float?
+A) 1.5
+B) 2.333333
+C) 0.0
+D) 0
+                                                                                                                                      Answer: 0
+                                                                                    Explanation:0 on its own is an int. 0.0 however, is a float.
+13. What values can the Boolean data type hold?
+A) Integers, fractions, complex numbers
+B) Unicode characters
+C) True or False values
+D) Any other data type
+                                                                                                                    Answer: True or False values
+14. What does it mean that Python is a dynamically-typed language?
+A) Variables in python can implicitly change to other types when comparing. For example, you can compare the string "2" and the number 2 using ==.
+B) Python variables can be assigned to different types and change types at will.
+C) Python is a more efficient language than C++
+D) All of the above
+                                                           Answer: Python variables can be assigned to different types and changes types at will.
+                                                                         Explanation: Dynamic typing just refers to the ability for variables to 
+                                                                                                flexibly learn their types during the assignment.
+
+15. Which of the following Python objects is immutable?
+A) set
+B) dict
+C) list
+D) str
+                                                                                                                                       Ans: str
+16. What would be the result of executing the following code? print(True*2)
+A) TrueTrue
+B) True True
+C) 2
+D) Syntax Error
+                                                                                                                                        Ans: 2
+17. After executing the following line of code, what would be the the data type of poll_data: poll_data = 7,
+A) int
+B) list
+C) tuple
+D) dict
+                                                                                                                                    Ans: tuple
+18. Which of the following Python's built-in functions returns the type of the object that was passed to it as a single argument?
+A) type( )
+B) datatype( )
+C) objtype( )
+D) object( )
+                                                                                                                                  Ans: type()
+19. Which of the following statements, when executed, raises the TypeError?
+A) dict(range(9))
+B) set(range(9))
+C) list(range(9))
+D) tuple(range(9))
+                                                                                                                          Ans: dict(range(9))
+20. After executing the following line of code, what would be the data type of obj_data: obj_data = ( )
+a) set
+b) dict
+c) tuple
+d) list
+                                                                                                                                  Ans: tuple
+
+
